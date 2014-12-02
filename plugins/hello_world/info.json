@@ -1,0 +1,7 @@
+{
+    "identifier": "hello_world",
+    "name": "Hello World",
+    "author": "LI LIN",
+    "description": "A Hello World Plugin.",
+    "version": "1.0.0"
+}

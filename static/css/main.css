@@ -1,0 +1,238 @@
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+form {
+  position: relative;
+  top: 2em;
+  left: 40em;
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 240px;
+  background-color: grey;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.addphoto{
+   position:fixed;
+   top: 25%;
+   left: 0%;
+}
+
+.chead {
+    position:fixed;
+    top: 23%;
+    left: 45%;
+}
+.create {
+   position: fixed;
+   top: 26%;
+   right: 13%;
+   width: 10%;
+   opacity: 0.8;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.add {
+   position: fixed;
+   top: 26%;
+   right: 12%;
+   width: 10%;
+   opacity: 0.8;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+
+.edit {
+   position: fixed;
+   top: 36%;
+   right: 12%;
+   width: 10%;
+   opacity:0.8;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.description {
+    position:fixed;
+    top: 50%;
+    right: 10.8%;
+}
+
+.side {
+   position:fixed;
+   top: 20%;
+   right: 10%;
+   width: 15%;
+   height: 79%;
+   background: black;
+   opacity: 0.8;
+   text-align: center;
+   color: white;
+   border-radius: 5px;
+
+}
+.bg {
+    position: fixed;
+    left: 10%;
+    height: 100%;
+    width: 80%;
+    background: url("background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    position: fixed;
+    top: 20%;
+    width: 80%;
+    height: 30%;
+    background-color: black;
+    color: white;
+    opacity:0.8;
+}
+.button1 {
+	position: relative;
+	top: 20px;
+	left:300px;
+	height: 25px;
+	width: 80px;
+	border-color: black;
+	background-color: #EFE2B0;
+	border-radius:5px;
+	margin: auto;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-family: courier;
+	font-size:20px;
+	font-style:bold;
+}
+
+.txt {
+    postion: fixed;
+    text-align: center;
+    color: white;
+}
+
+.tbl {
+     background: url("main1.jpg");
+     background-size: cover;
+     position:fixed;
+     top: 55%;
+     width: 25%;
+     height: 25%;
+}
+
+.tbl2 {
+     background: url("main2.jpg");
+     background-size: cover;
+     position:fixed;
+     top: 55%;
+     left: 37.5%;
+     width: 25%;
+     height: 25%;
+}
+
+.tbl3 {
+     background: url("main3.jpg");
+     background-size: cover;
+     position:fixed;
+     top: 55%;
+     right: 10%;
+     width: 25%;
+     height: 25%;
+}
+
+.pic {
+     max-width: 100%;
+     max-height: 100%;
+     
+}
+
+.button1:hover {
+	position: relative;
+	top: 20px;
+	border-color: black;
+	background-color: #EFE2B0;
+	color: white;
+}
+.button1:active {
+   border-top-color: #1b435e;
+   background: white;
+   color:black;
+   }
+
+.logo {  
+	font-family: courier;
+	color: black;
+        text-align: center;
+}
+
+.col {
+  float:left;
+  padding: 7px;
+}
+
+.nav {
+  position: fixed;
+  width: 80%;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+.img {
+    margin: 5px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.img a:hover img {
+    border:1px solid #0000ff;
+}
+
+.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+
+

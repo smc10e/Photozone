@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask</title>   
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <div>
+    <img src="/static/images/photos/{{ Photo[0][0] }}_{{ ID }}.{{ Photo[0][4] }}">
+    </div>
+  </body>
+</html>
+{% endblock %}

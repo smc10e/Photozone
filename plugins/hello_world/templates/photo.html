@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+   <div class = "side">
+   <div class ="add"><a href = "http://127.0.0.1:5000/album/{{ ID }}/add"> Add Photo </a></div>
+   <div class ="edit"><a href = "http://127.0.0.1:5000/album/{{ ID }}/edit"> Edit Album </a></div>
+   <div class = "description"><textarea name="desc" cols="20" rows="8" readonly>{{desc[0][0]}}</textarea></div>
+   </div>
+{% for photos in photos %}
+ <div class="img">
+
+  <div class="desc">
+  <a href="javascript:if(confirm('Are you sure to delete?'))location='{{ ID }}/{{ photos[2] }}/delete'">
+    <img src="/static/icon/Delete-icon.png"/ width="10" height="10">
+  </a>
+  </div>
+  <a href = "http://127.0.0.1:5000/album/{{ ID }}/{{ photos[2] }}/show" target="_blank">
+    <img src="/static/images/photos/{{ photos[0] }}_{{ ID }}.{{ photos[4] }}"/ width="150px" height="150px">
+  </a>
+  
+ </div>
+{% endfor %}
+
+{% endblock %}

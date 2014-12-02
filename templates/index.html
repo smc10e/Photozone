@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="container">
+    <h2 class = "txt">Welcome to the Flask app<h2>
+    <h3 class = "txt">This is the home page for the Flask app<h3>    
+    <center>{{ emit_event("show_album") }}</center>
+  </div>
+
+  <div class = "tbl"></div>
+  <div class = "tbl2"></div>
+  <div class = "tbl3"></div>
+{% endblock %}

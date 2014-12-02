@@ -1,0 +1,38 @@
+from flask import Flask, render_template, request, redirect, url_for, \
+    send_from_directory, current_app
+from flask.ext.plugins import PluginManager, get_plugins_list, get_plugin, \
+    Plugin, emit_event
+from werkzeug import secure_filename
+
+
+class AppPlugin(Plugin):
+    def register_blueprint(self, blueprint, **kwargs):
+        """Registers a blueprint."""
+        current_app.register_blueprint(blueprint, **kwargs)
+
+app = Flask(__name__)
+
+plugin_manager = PluginManager(app)
+
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/disable/<plugin>")
+def disable(plugin):
+    plugin = get_plugin(plugin)
+    plugin_manager.disable_plugins([plugin])
+    return redirect(url_for("index"))
+
+
+@app.route("/enable/<plugin>")
+def enable(plugin):
+    plugin = get_plugin(plugin)
+    plugin_manager.enable_plugins([plugin])
+    return redirect(url_for("index"))
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
